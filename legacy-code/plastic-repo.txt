@@ -1,0 +1,3 @@
+# Simulated code from Plastic SCM
+# Migrated to Git using fast-export or manual dump
+

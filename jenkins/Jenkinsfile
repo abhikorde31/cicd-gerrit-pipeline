@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'chmod +x jenkins/build.sh && jenkins/build.sh'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'chmod +x jenkins/test.sh && jenkins/test.sh'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'chmod +x jenkins/deploy.sh && jenkins/deploy.sh'
+            }
+        }
+    }
+}
+
